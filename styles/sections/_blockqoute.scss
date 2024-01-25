@@ -1,0 +1,25 @@
+.blockqoute {
+  padding: rem(140) 0 rem(150);
+
+  @include mobile {
+    padding: rem(70) 0;
+  }
+  
+  &-text {
+    max-width: rem(650);
+    text-align: center;
+    margin: 0 auto;
+    font-family: $Merriweather, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    p {
+      font-size: rem(18);
+      line-height: 2;
+      margin-bottom: rem(50);
+    }
+  }
+
+  &-author {
+    color: #9E9E9E;
+    font-size: rem(14);
+  }
+}

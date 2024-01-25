@@ -1,0 +1,53 @@
+.lets-make {
+  background-color: #F6F8FA;
+
+  @include mobile {
+    padding: rem(70) 0;
+  }
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(30);
+    }
+  }
+
+  &-bg {
+    width: rem(567);
+    background-image: url('../img/lets-make/bg.jpg');
+    @include bg-cover;
+
+    @include mobile {
+      height: 33rem;
+      width: 100%;
+    }
+  }
+
+  &-content {
+    max-width: rem(470);
+    padding: rem(140) 0;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &-title {
+    margin-bottom: rem(67);
+
+    @include mobile {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &-text {
+    p {
+      @include notLastChild {
+        margin-bottom: rem(25);
+      }
+    }
+  }
+}

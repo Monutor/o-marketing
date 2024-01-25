@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  column-gap: rem(28);
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: rem(15);
+  }
+
+  &-link {
+    font-family: $Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: rem(12);
+    line-height: 1;
+    letter-spacing: rem(4);
+    color: #FFF;
+
+    &:hover {
+      opacity: 0.65;
+    }
+  }
+}

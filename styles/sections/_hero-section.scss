@@ -1,0 +1,74 @@
+.hero-section {
+  @include bg-cover;
+  background-image: url('../img/hero-section/bg.jpg');
+
+  &-inner {
+    height: 100vh;
+    min-height: rem(480);
+    max-height: rem(1080);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #FFF;
+    font-family: $Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: rem(72);
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateY(rem(80));
+
+    @include mobile {
+      font-size: rem(42);
+    }
+  }
+
+  &-caption {
+    display: block;
+    color: #FCBB08;
+    font-size: rem(16);
+    font-weight: 700;
+    letter-spacing: rem(2.743);
+    padding-top: rem(18);
+
+    @include mobile {
+      font-size: rem(14);
+      padding-top: rem(4);
+    }
+  }
+
+  &-button {
+    align-self: center;
+    margin-bottom: rem(62);
+
+    @include mobile {
+      margin-bottom: rem(40);
+    }
+  }
+
+  &-icon {
+    width: rem(26);
+    height: rem(43);
+
+    path {
+      animation: scroll-down 2s ease-in-out alternate infinite forwards;
+
+      @keyframes scroll-down {
+        0% {
+          transform: translateY(0);
+        }
+
+        100% {
+          transform: translateY(rem(15));
+        }
+
+      }
+    }
+  }
+
+
+}

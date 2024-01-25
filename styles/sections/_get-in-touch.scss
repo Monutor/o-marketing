@@ -1,0 +1,47 @@
+.get-in-touch {
+  position: relative;
+
+  @include mobile {
+    padding: rem(70) 0;
+  }
+
+  &-inner {
+    display: flex;
+    column-gap: rem(100);
+
+    @include mobile {
+      padding: 0 rem(15);
+      flex-direction: column;
+      row-gap: rem(30);
+    }
+  }
+
+  &-content {
+    max-width: rem(569);
+    width: 100%;
+    flex-shrink: 0;
+    padding: rem(146) 0 rem(164);
+    padding-left: calc((100% - 117rem) / 2);
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  &-title {
+    margin-bottom: rem(95);
+    @include mobile {
+      margin-bottom: rem(60);
+    }
+  }
+
+  &-map {
+    width: calc(100% - 56.9rem - 10rem);
+    height: rem(902);
+
+    @include mobile {
+      width: 100%;
+      height: rem(350);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.stats {
+  padding: rem(164) 0 rem(200);
+
+  @include mobile {
+    padding: rem(70) 0;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: rem(30);
+    }
+  }
+
+  &-item {
+    color: #333;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &-number {
+    display: block;
+    font-size: rem(60);
+    font-family: $Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: rem(10);
+    font-weight: 700;
+
+    @include mobile {
+      font-size: rem(45);
+    }
+  }
+
+  &-caption {
+    font-weight: 400;
+  }
+}

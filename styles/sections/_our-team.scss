@@ -1,0 +1,70 @@
+.our-team {
+  padding: rem(120) 0 rem(130);
+
+  @include mobile {
+    padding: rem(70) 0;
+  }
+
+  &-title {
+    margin-bottom: rem(102);
+
+    @include mobile {
+      margin-bottom: rem(60);
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(15) rem(30);
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      row-gap: rem(30);
+    }
+  }
+
+  &-item {
+    text-align: center;
+  }
+
+  &-img {
+    width: rem(370);
+    height: rem(440);
+    filter: grayscale(1);
+    margin-bottom: rem(35);
+    transition: filter 350ms;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+
+    @include mobile {
+      margin-bottom: rem(10);
+      width: 100%;
+      height: rem(350);
+    }
+  }
+
+  &-name {
+    color: #333;
+    font-family: $Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: rem(10);
+    @include mobile {
+      margin-bottom: rem(5);
+    }
+  }
+
+  &-position {
+    color: #373A39;
+    font-size: rem(12);
+    font-weight: 300;
+    line-height: 1;
+  }
+
+
+}

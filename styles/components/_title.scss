@@ -1,0 +1,22 @@
+.title {
+  font-size: rem(60);
+  line-height: 1.25;
+  letter-spacing: rem(-1.65);
+  font-family: $Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #242121;
+  padding-bottom: rem(14);
+  position: relative;
+  @include mobile {
+    font-size: rem(40);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: rem(60);
+    height: rem(4);
+    background-color: #FCBB08;
+  }
+}

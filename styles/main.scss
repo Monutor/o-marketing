@@ -1,0 +1,34 @@
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'reset';
+@import 'settings';
+@import 'vendor';
+
+
+// общие компоненты
+@import 'components/logo';
+@import 'components/title';
+@import 'components/contact-form';
+@import 'components/socials';
+@import 'components/burger';
+
+
+// основные стили проекта
+@import 'components/header';
+
+@import "sections/hero-section";
+@import "sections/about-us";
+@import "sections/our-expertise";
+@import "sections/lets-make";
+@import "sections/portfolio";
+@import "sections/blockqoute";
+@import "sections/video";
+@import "sections/stats";
+@import "sections/slider-promo";
+@import "sections/our-team";
+@import "sections/pricing-plans";
+@import "sections/partners";
+@import "sections/get-in-touch";
+
+@import "components/footer";

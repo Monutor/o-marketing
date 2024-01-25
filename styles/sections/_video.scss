@@ -1,0 +1,32 @@
+.video {
+  &-link {
+    display: block;
+    width: 100%;
+    height: rem(324);
+    @include flex-all-center;
+    @include bg-cover;
+    background-image: url('../img/promo-video/bg.jpg');
+    // первый способ
+    background-color: rgba(#000000, 0.35);
+    background-blend-mode: overlay;
+
+
+    // второй способ
+    /*     position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(#000000, 0.35);
+    } */
+  }
+
+  &-play {
+    width: rem(55);
+    height: rem(65);
+    // второй способ
+    /*     position: relative;
+    z-index: 2; */
+  }
+}
